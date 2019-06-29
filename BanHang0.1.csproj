@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08051884-2DE2-49CA-9368-DC1ABA2F27E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BanHang0._1</RootNamespace>
+    <AssemblyName>BanHang0.1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bán Hàng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bán Hàng.Designer.cs">
+      <DependentUpon>Bán Hàng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changePassword.Designer.cs">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\AddHistoryLoginDAO.cs" />
+    <Compile Include="DAO\billDAO.cs" />
+    <Compile Include="DAO\BillInforDAO.cs" />
+    <Compile Include="DAO\CatalogyDAO.cs" />
+    <Compile Include="DAO\changePasswordDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\HouseDAO.cs" />
+    <Compile Include="DAO\ItemDAO.cs" />
+    <Compile Include="DAO\MoneyDAO.cs" />
+    <Compile Include="DAO\RandomIdDAO.cs" />
+    <Compile Include="DTO\Acount.cs" />
+    <Compile Include="DTO\Bill.cs" />
+    <Compile Include="DTO\BillInfor.cs" />
+    <Compile Include="DTO\Catalogy.cs" />
+    <Compile Include="DTO\HistoryLogin.cs" />
+    <Compile Include="DTO\House.cs" />
+    <Compile Include="DTO\Item.cs" />
+    <Compile Include="DTO\Money.cs" />
+    <Compile Include="fLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogIn.Designer.cs">
+      <DependentUpon>fLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kế Toán.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kế Toán.Designer.cs">
+      <DependentUpon>Kế Toán.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\addAcountDataProvider.cs" />
+    <Compile Include="Thủ Kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thủ Kho.Designer.cs">
+      <DependentUpon>Thủ Kho.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bán Hàng.resx">
+      <DependentUpon>Bán Hàng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changePassword.resx">
+      <DependentUpon>changePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogIn.resx">
+      <DependentUpon>fLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kế Toán.resx">
+      <DependentUpon>Kế Toán.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thủ Kho.resx">
+      <DependentUpon>Thủ Kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\email.PNG" />
+    <Content Include="Image\luong.PNG" />
+    <Content Include="Image\name.PNG" />
+    <Content Include="Image\password.PNG" />
+    <Content Include="Image\telephone.PNG" />
+    <Content Include="Image\username.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

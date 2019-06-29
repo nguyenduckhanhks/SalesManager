@@ -1,0 +1,16 @@
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\bin\Debug\BanHang0.1.exe.config
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\bin\Debug\BanHang0.1.exe
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\bin\Debug\BanHang0.1.pdb
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0.1.csprojAssemblyReference.cache
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.Properties.Resources.resources
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0.1.csproj.GenerateResource.cache
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0.1.csproj.CoreCompileInputs.cache
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0.1.exe
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0.1.pdb
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.fLogIn.resources
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.SignUp.resources
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.Admin.resources
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.Bán_Hàng.resources
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.Kế_Toán.resources
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.Thủ_Kho.resources
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.changePassword.resources
