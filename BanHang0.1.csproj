@@ -46,22 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs">
+    <Compile Include="DAO\ShowAcountDAO.cs" />
+    <Compile Include="DeleteAcount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
+    <Compile Include="DeleteAcount.Designer.cs">
+      <DependentUpon>DeleteAcount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bán Hàng.cs">
+    <Compile Include="Form\Bán Hàng.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bán Hàng.Designer.cs">
+    <Compile Include="Form\Bán Hàng.Designer.cs">
       <DependentUpon>Bán Hàng.cs</DependentUpon>
     </Compile>
-    <Compile Include="changePassword.cs">
+    <Compile Include="Form\changePassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="changePassword.Designer.cs">
+    <Compile Include="Form\changePassword.Designer.cs">
       <DependentUpon>changePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\AddHistoryLoginDAO.cs" />
@@ -82,47 +89,59 @@
     <Compile Include="DTO\House.cs" />
     <Compile Include="DTO\Item.cs" />
     <Compile Include="DTO\Money.cs" />
-    <Compile Include="fLogIn.cs">
+    <Compile Include="Form\fLogIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fLogIn.Designer.cs">
+    <Compile Include="Form\fLogIn.Designer.cs">
       <DependentUpon>fLogIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kế Toán.cs">
+    <Compile Include="Form\Kế Toán.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Kế Toán.Designer.cs">
+    <Compile Include="Form\Kế Toán.Designer.cs">
       <DependentUpon>Kế Toán.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignUp.cs">
+    <Compile Include="Form\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SignUp.Designer.cs">
+    <Compile Include="Form\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\addAcountDataProvider.cs" />
-    <Compile Include="Thủ Kho.cs">
+    <Compile Include="Form\Thủ Kho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Thủ Kho.Designer.cs">
+    <Compile Include="Form\Thủ Kho.Designer.cs">
       <DependentUpon>Thủ Kho.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin.resx">
+    <Compile Include="Form\UpdateAcount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\UpdateAcount.Designer.cs">
+      <DependentUpon>UpdateAcount.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DeleteAcount.resx">
+      <DependentUpon>DeleteAcount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bán Hàng.resx">
+    <EmbeddedResource Include="Form\Bán Hàng.resx">
       <DependentUpon>Bán Hàng.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="changePassword.resx">
+    <EmbeddedResource Include="Form\changePassword.resx">
       <DependentUpon>changePassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fLogIn.resx">
+    <EmbeddedResource Include="Form\fLogIn.resx">
       <DependentUpon>fLogIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kế Toán.resx">
+    <EmbeddedResource Include="Form\Kế Toán.resx">
       <DependentUpon>Kế Toán.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\UpdateAcount.resx">
+      <DependentUpon>UpdateAcount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,10 +152,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SignUp.resx">
+    <EmbeddedResource Include="Form\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Thủ Kho.resx">
+    <EmbeddedResource Include="Form\Thủ Kho.resx">
       <DependentUpon>Thủ Kho.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

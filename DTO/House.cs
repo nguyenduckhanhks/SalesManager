@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BanHang0._1.DAO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -44,6 +45,18 @@ namespace BanHang0._1.DTO
             this.note = row["note"].ToString();
             this.IdCatalogy = row["idCatalogy"].ToString();
             this.dateAddItem = row["dateAddItem"].ToString();
+        }
+
+        public House(string idItem, string name, float price, int countItem, string note, string idcatalogy, string dateAddItem)
+        {
+            this.id = RandomIdDAO.Instance.randomID("HOUSE");
+            this.idItem = idItem;
+            this.name = name;
+            this.price = price;
+            this.countItem = countItem;
+            this.note = note;
+            this.idCatalogy = idcatalogy;
+            this.dateAddItem = dateAddItem;
         }
     }
 }

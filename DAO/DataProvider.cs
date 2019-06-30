@@ -40,5 +40,17 @@ namespace BanHang0._1.DAO
 
             return table;
         }
+
+        public void DeleteQuery(string query)
+        {
+            SqlConnection connection = new SqlConnection(ConnectionStr);
+
+            connection.Open();
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
     }
 }

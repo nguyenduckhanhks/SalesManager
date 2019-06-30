@@ -14,3 +14,5 @@ C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.Bán_Hàng.re
 C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.Kế_Toán.resources
 C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.Thủ_Kho.resources
 C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.changePassword.resources
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.UpdateAcount.resources
+C:\Users\NGUYEN DUC KHANH\Desktop\BanHang0.1\obj\Debug\BanHang0._1.DeleteAcount.resources

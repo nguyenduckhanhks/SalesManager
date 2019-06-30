@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BanHang0._1.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,21 @@ namespace BanHang0._1.DAO
         {
             get { if (instance == null) instance = new CatalogyDAO(); return CatalogyDAO.instance; }
             private set { CatalogyDAO.instance = value; }
+        }
+
+        public void AddCatalogy(Catalogy catalogy)
+        {
+            string query = @"insert into dbo.ITEMCATALOGY
+            (
+                id,
+                name
+            )
+            values
+            (
+                '"+catalogy.Id+@"',
+                '"+catalogy.Name+@"'
+            )";
+            DataProvider.Instance.ExcuteQuery(query);
         }
     }
 }

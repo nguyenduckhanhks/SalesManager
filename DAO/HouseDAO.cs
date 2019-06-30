@@ -30,5 +30,32 @@ namespace BanHang0._1.DAO
             }
             return houses;
         }
+
+        public void AddData(House house)
+        {
+            string query = @"insert into dbo.HOUSE
+            (
+	            id,
+	            idItem,
+	            name,
+	            price,
+	            countItem,
+	            note,
+	            idCatalogy,
+	            dateAddItem
+            )
+            values
+            (
+	            '"+house.Id+@"',
+	            '"+house.IdItem+@"',
+	            '"+house.Name+@"',
+	            "+house.Price.ToString()+@",
+	            "+house.CountItem.ToString()+@",
+	            '"+house.Note+@"',
+	            '"+house.IdCatalogy+@"',
+	            '"+house.DateAddItem+@"'
+            )";
+            DataProvider.Instance.ExcuteQuery(query);
+        }
     }
 }
